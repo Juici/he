@@ -1,5 +1,5 @@
 [package]
-name = "he"
+name = "he-core"
 version = "0.0.0"
 authors = ["James Whaley <juicy66173@gmail.com>"]
 description = "A frontend agnostic hex editor."
@@ -12,6 +12,9 @@ homepage = "https://github.com/Juici/he"
 repository = "https://github.com/Juici/he"
 
 [workspace]
-members = []
+members = [
+    "core-lib"
+]
 
 [dependencies]
+he-core-lib = { version = "0.0", path = "core-lib" }
